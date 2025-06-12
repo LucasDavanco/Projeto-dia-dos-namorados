@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: verdana, Tahoma, sans-serif;
+    --fonte2:"Passion One", sans-serif;
+    --fonte3:"Sriracha";
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+html, body {
+    min-height: 100vh;
+    background-color: rgb(232, 230, 230);
+    font-family: var(--fonte1);
+
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte2);
+
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-size: 3vw;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    color: rgb(106, 106, 232);
+    transition-duration: 2s;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section >p {
+    padding-bottom: 2em;
+}
+
+section.nomral {
+    background-color: rgb(233, 232, 232);
+    color: black
+
+}
+
+section.imagem {
+    background-color: black;
+    color: rgb(233, 228, 228);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.533);
+    background-attachment: fixed;
+}
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.356);
+    text-shadow: 1px 1px 0px black;
+    border-radius: 2px;
+
+}
+
+section#img01 {
+    background-image: url('imagens/20231223_175244.jpg');
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img02 {
+background-image: url('imagens/Imagem\ do\ WhatsApp\ de\ 2025-06-12\ à\(s\)\ 10.54.22_2ea47194.jpg');
+background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
